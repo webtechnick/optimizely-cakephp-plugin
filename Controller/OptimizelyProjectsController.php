@@ -91,4 +91,13 @@ class OptimizelyProjectsController extends OptimizelyAppController {
 
 		$this->redirect(array('action' => 'index'));
 	}
+
+	public function admin_cache() {
+		if ($this->OptimizelyProject->cacheProjects()) {
+			$this->goodFlash('Projects cached.');
+		} else {
+			$this->badFlash('Error caching projects');
+		}
+		return $this->redirect(array('array' => 'index'));
+	}
 }

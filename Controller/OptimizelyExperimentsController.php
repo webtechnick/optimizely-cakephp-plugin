@@ -91,4 +91,18 @@ class OptimizelyExperimentsController extends OptimizelyAppController {
 
 		$this->redirect(array('action' => 'index'));
 	}
+
+	public function admin_cache($project_id = null) {
+		if (!$project_id) {
+			$this->badFlash('Project ID not specified.');
+			return $this->redirect(array('array' => 'index'));
+		}
+		$result = $this->OptimizelyExperiment->cacheExperiments($project_id);
+		if ($result) {
+			$this->goodFlash('Experiments Cached.');
+		} else {
+			$this->badFlash('Error caching experiments');
+		}
+		return $this->redirect(array('array' => 'index'));
+	}
 }
