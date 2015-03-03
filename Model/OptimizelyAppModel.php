@@ -1,12 +1,25 @@
 <?php
-
 App::uses('AppModel', 'Model');
-
 class OptimizelyAppModel extends AppModel {
 
 	public $actsAs = array('Containable');
 
 	public $Optimizely = null;
+
+	/**
+	* return conditions based on searchable fields and filter
+	* @param string filter
+	* @return conditions array
+	*/
+	public function generateFilterConditions($filter = null, $pre = '') {
+		$retval = array();
+		if ($filter) {
+			foreach ($this->searchFields as $field) {
+				$retval['OR']["$field LIKE"] = $pre . $filter . '%';
+			}
+		}
+		return $retval;
+	}
 
 	/**
 	* Load the optimizely datasource

@@ -122,8 +122,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 			} else {
 				debug($save_data);
 			}
-			return $retval;
 		}
+		return $retval;
 	}
 
 	/**
