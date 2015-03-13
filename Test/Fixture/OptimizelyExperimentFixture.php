@@ -45,7 +45,7 @@ class OptimizelyExperimentFixture extends AppTestFixture {
 	public $records = array(
 		array(
 			'id' => '1',
-			'status' => 'Active',
+			'status' => 'Running',
 			'activation_mode' => 'Lorem ipsum dolor sit amet',
 			'url_condition_value' => 'Lorem ipsum dolor sit amet',
 			'url_condition_match_type' => 'Lorem ipsum dolor sit amet',
@@ -57,7 +57,7 @@ class OptimizelyExperimentFixture extends AppTestFixture {
 			'percentage_included' => 'Lorem ip',
 			'experiment_type' => 'Lorem ipsum dolor sit amet',
 			'details' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'edit_url' => 'http://localhost/hearing-aids',
+			'edit_url' => '/hearing-aids',
 			'last_modified' => '2015-02-20 09:35:06',
 			'created' => '2015-02-20 09:35:06'
 		),

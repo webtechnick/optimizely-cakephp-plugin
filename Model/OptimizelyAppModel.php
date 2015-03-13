@@ -52,4 +52,11 @@ class OptimizelyAppModel extends AppModel {
 		$this->validationErrors = array();
 		return $this->data;
 	}
+
+	/**
+	* Loads optimizely configuration
+	*/
+	public function loadConfig() {
+		return Configure::load('optimizely');
+	}
 }

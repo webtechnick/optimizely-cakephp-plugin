@@ -132,11 +132,47 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 	* @return boolean true if this url has an active experiment.
 	*/
 	public function hasExperiment($here = null) {
-		App::uses('Router','Routing');
-		$url = Router::url($here, true);
-		$conditions = array(
-			'OptimizelyExperiment.edit_url' => $url,
-		);
-		return $this->hasAny($conditions);
+		//Check if we have sections to go against.
+		$this->loadConfig();
+		$sections = Configure::read('Optimizely.sections');
+		if (empty($sections)) {
+			return false;
+		}
+
+		//If here matches a section we have defined.
+		$matched_regex = null;
+		foreach ($sections as $section => $regex) {
+			if (preg_match($regex, $here)) {
+				$matched_regex = $regex;
+				break; //break foreach.
+			}
+		}
+
+		//Here doesn't match a section we have defined, return false.
+		if (!$matched_regex) {
+			return false;
+		}
+
+		//Get all the active experiments edit_urls and see if they match against the section found
+		$experiments = $this->find('all', array(
+			'conditions' => array(
+				'OptimizelyExperiment.status' => 'Running',
+			),
+			'fields' => array(
+				'OptimizelyExperiment.edit_url'
+			),
+			'contain' => array(),
+			'recurisve' => -1
+		));
+
+		foreach ($experiments as $experiment) {
+			$edit_url = str_replace('http://','', $experiment['OptimizelyExperiment']['edit_url']);
+			$edit_url = str_replace(Configure::read('Optimizely.env'),'', $edit_url);
+			if (preg_match($matched_regex, $edit_url)) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 }
