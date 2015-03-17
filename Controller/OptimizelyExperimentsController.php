@@ -103,6 +103,6 @@ class OptimizelyExperimentsController extends OptimizelyAppController {
 		} else {
 			$this->badFlash('Error caching experiments');
 		}
-		return $this->redirect(array('array' => 'index'));
+		return $this->redirect(array('action' => 'index'));
 	}
 }

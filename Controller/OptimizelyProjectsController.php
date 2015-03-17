@@ -98,6 +98,6 @@ class OptimizelyProjectsController extends OptimizelyAppController {
 		} else {
 			$this->badFlash('Error caching projects');
 		}
-		return $this->redirect(array('array' => 'index'));
+		return $this->redirect(array('action' => 'index'));
 	}
 }
