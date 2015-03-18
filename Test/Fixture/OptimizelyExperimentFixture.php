@@ -61,6 +61,42 @@ class OptimizelyExperimentFixture extends AppTestFixture {
 			'last_modified' => '2015-02-20 09:35:06',
 			'created' => '2015-02-20 09:35:06'
 		),
+		array(
+			'id' => '2',
+			'status' => 'Running',
+			'activation_mode' => 'Lorem ipsum dolor sit amet',
+			'url_condition_value' => 'Lorem ipsum dolor sit amet',
+			'url_condition_match_type' => 'Lorem ipsum dolor sit amet',
+			'custom_css' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'descriptions' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'custom_js' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'sharable_results_link' => 'Lorem ipsum dolor sit amet',
+			'is_multivariante' => 1,
+			'percentage_included' => 'Lorem ip',
+			'experiment_type' => 'Lorem ipsum dolor sit amet',
+			'details' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'edit_url' => 'http://qa.healthyhearing.com/hearing-aids/MT-Montana/Bozeman/59715/20002-Helton-Hearing-Care',
+			'last_modified' => '2015-02-20 09:35:06',
+			'created' => '2015-02-20 09:35:06'
+		),
+		array(
+			'id' => '3',
+			'status' => 'Running',
+			'activation_mode' => 'Lorem ipsum dolor sit amet',
+			'url_condition_value' => 'Lorem ipsum dolor sit amet',
+			'url_condition_match_type' => 'Lorem ipsum dolor sit amet',
+			'custom_css' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'descriptions' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'custom_js' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'sharable_results_link' => 'Lorem ipsum dolor sit amet',
+			'is_multivariante' => 1,
+			'percentage_included' => 'Lorem ip',
+			'experiment_type' => 'Lorem ipsum dolor sit amet',
+			'details' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+			'edit_url' => 'http://qa.healthyhearing.com',
+			'last_modified' => '2015-02-20 09:35:06',
+			'created' => '2015-02-20 09:35:06'
+		),
 	);
 
 }

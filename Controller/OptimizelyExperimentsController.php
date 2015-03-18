@@ -66,7 +66,6 @@ class OptimizelyExperimentsController extends OptimizelyAppController {
 			$this->request->data = $this->OptimizelyExperiment->findById($id);
 			$this->set('id', $id);
 		}
-
 	}
 
 /**
@@ -89,7 +88,7 @@ class OptimizelyExperimentsController extends OptimizelyAppController {
 			$this->badFlash(__('Optimizely experiment was not deleted'));
 		}
 
-		$this->redirect(array('action' => 'index'));
+		return $this->redirect(array('action' => 'index'));
 	}
 
 	public function admin_cache($project_id = null) {

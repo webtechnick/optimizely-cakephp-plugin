@@ -35,6 +35,12 @@ class OptimizelyExperimentTest extends BaseTest {
 	public function test_hasExperiment() {
 		$result = $this->OptimizelyExperiment->hasExperiment('/hearing-aids');
 		$this->assertTrue($result);
+
+		$result = $this->OptimizelyExperiment->hasExperiment('/hearing-aids/NM-New-Mexico/Rio-Rancho/87124/8119025763-Worth-Hearing-Center-Rio-Rancho');
+		$this->assertTrue($result);
+
+		$result = $this->OptimizelyExperiment->hasExperiment('/');
+		$this->assertTrue($result);
 	}
 
 /**
