@@ -20,8 +20,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
  */
 	public $validate = array(
 		'status' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -30,8 +30,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 			),
 		),
 		'url_condition_value' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -40,8 +40,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 			),
 		),
 		'url_condition_match_type' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -50,8 +50,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 			),
 		),
 		'descriptions' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -60,8 +60,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 			),
 		),
 		'sharable_results_link' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -80,8 +80,8 @@ class OptimizelyExperiment extends OptimizelyAppModel {
 			),
 		),
 		'edit_url' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
